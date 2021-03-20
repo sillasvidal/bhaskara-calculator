@@ -6,12 +6,12 @@ body, input, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 }
 
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
 }
 
 .inputsContainer {
@@ -38,6 +38,7 @@ input {
     font-size: 40px;
     width: 150px;
     text-align: center;
+    color: #f2f2f2;
 }
 
 input:focus { 
@@ -109,4 +110,101 @@ h3 {
 .resultText {
     font-size: 30px;
     color: #f2f2f2;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 800px) {
+    
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.inputsContainer {
+    margin-top: 60px;
+    width: 1179px;
+    height: 194px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.buttonCalc {
+    background-color: #f2f2f2;
+    margin-top: 150px;
+    height: 63px;
+    width: 325px;
+    border-radius: 52px;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buttonCalc:hover {
+    background-color: #f2f2f2;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.buttonCalc:focus {
+    outline: none !important;
+}
+
+.resultContainer {
+    margin-top: 80px;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.resultX {
+    background-color: #f2f2f2;
+    width: 516px;
+    height: 269px;
+    border-radius: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.result {
+    background-color: #3581F3;
+    width: 188px;
+    height: 106px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 8px;
+}
+
+.resultText {
+    font-size: 30px;
+    color: #f2f2f2;
+}
+    
 }
