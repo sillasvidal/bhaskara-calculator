@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <title>Bhaskara Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="inputsContainer">
+            <div class="element">
+                <input type="text" name="componentA" id="a" />
+                <h2>A</h2>
+            </div>
+            <div class="element">
+                <input type="text" name="componentB" id="b" />
+                <h2>B</h2>
+            </div>
+            <div class="element">
+                <input type="text" name="componentC" id="c" />
+                <h2>C</h2>
+            </div>
+        </div>
+
+        <button type="button" class="buttonCalc" onclick="handleSubmit()">Calcular X</button>
+
+        <div class="resultContainer">
+            <div class="resultX">
+                <h3>X'</h3>
+                <div class="result">
+                    <h2 class="resultText" id="x1">0</h2>
+                </div>
+            </div>
+
+            <div class="resultX">
+                <h3>X"</h3>
+                <div class="result">
+                    <h2 class="resultText" id="x2">0</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
